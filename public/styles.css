@@ -1,0 +1,40 @@
+
+
+body {
+    max-width: 1024px !important;
+}
+
+#todoapp {
+    max-width: 550px;
+    margin: 130px 2% 40px 30%;
+}
+
+#settings {
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+.todoapp h2 {
+	width: 100%;
+	font-size: 30px;
+	font-weight: 100;
+	text-align: center;
+	color: rgba(175, 47, 47, 0.15);
+	-webkit-text-rendering: optimizeLegibility;
+	-moz-text-rendering: optimizeLegibility;
+	text-rendering: optimizeLegibility;
+}
+
+.todo-list li {
+	font-size: 20px !important;
+	border-bottom: hidden !important;
+}
+
+.auto {
+	padding: 8px 15px 15px 30px !important;
+}
+
+.todo-list {
+	border-top: 1px solid #ededed;
+}
