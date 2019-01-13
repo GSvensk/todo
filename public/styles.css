@@ -15,6 +15,23 @@ body {
     left: 20px;
 }
 
+@media (max-width: 760px) {
+	#settings {
+		display:none;
+	}
+
+	#todoapp {
+		margin: 130px auto 40px auto;
+	}
+}
+
+@media (max-width: 600px) {
+	#todoapp {
+		margin: 130px 4% 40px 4%;
+	}
+}
+
+
 .todoapp h2 {
 	width: 100%;
 	font-size: 30px;
@@ -38,3 +55,5 @@ body {
 .todo-list {
 	border-top: 1px solid #ededed;
 }
+
+
