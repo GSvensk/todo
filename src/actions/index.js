@@ -22,16 +22,18 @@ export const completeAllTodos = () => ({ type: types.COMPLETE_ALL_TODOS })
 export const clearCompleted = () => ({ type: types.CLEAR_COMPLETED })
 export const setVisibilityFilter = filter => ({ type: types.SET_VISIBILITY_FILTER, filter })
 
+/*
 export function SubscribeToFirebase() {
-
     firebase.default.db.ref('todos').orderByKey().on('child_added', snapshot => {
         let text = snapshot.val()['text'];
-
+        console.log(snapshot.val())
         if (snapshot.val()['manual'] === false) {
-            store.dispatch(addTodo(text));
+            console.log("Subscription")
+            store.dispatch(addVisualTodo(text));
         }
     });
 }
+*/
 
 export function getInitialTodosFromFirebase() {
     firebase.default.db.ref('todos').orderByKey().once('value').then(snapshot => {

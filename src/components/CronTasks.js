@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { SubscribeToFirebase, getInitialTodosFromFirebase } from '../actions';
+import {getInitialTodosFromFirebase } from '../actions';
 
 class CronTasks extends Component {
     constructor(props) {
         super(props);
         getInitialTodosFromFirebase();
-        SubscribeToFirebase();
 
         this.state = {
             username: '',
@@ -79,16 +78,16 @@ class CronTasks extends Component {
                 <ul className="todo-list">
                     <div className="view">
                         <li>
-                            <label class="auto">Dishes</label>
+                            <label className="auto">Dishes</label>
                         </li>
                         <li>
-                            <label class="auto">Climbing</label>
+                            <label className="auto">Climbing</label>
                         </li>
                         <li>
-                            <label class="auto">Cleaning</label>
+                            <label className="auto">Cleaning</label>
                         </li>
                         <li>
-                            <label class="auto">Weekly Summary</label>
+                            <label className="auto">Weekly Summary</label>
                         </li>
                     </div>
                 </ul>
